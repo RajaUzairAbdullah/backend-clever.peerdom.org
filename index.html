@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subdomain Taken Over</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00FF00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .title {
+            font-size: 3rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            text-align: center;
+            animation: fadeIn 3s ease-out;
+        }
+
+        .message {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            animation: matrixEffect 2s infinite linear;
+        }
+
+        .footer {
+            font-size: 1rem;
+            margin-top: 50px;
+            color: #00FF00;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            animation: fadeIn 4s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes matrixEffect {
+            0% { opacity: 0.1; }
+            25% { opacity: 1; }
+            50% { opacity: 0.1; }
+            75% { opacity: 1; }
+            100% { opacity: 0.1; }
+        }
+
+        .matrix {
+            font-size: 2rem;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .matrix span {
+            display: inline-block;
+            animation: fall 1s infinite;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-100vh); opacity: 0.5; }
+            100% { transform: translateY(100vh); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="matrix">
+        <!-- Random matrix falling text -->
+        <span style="animation-delay: 0s;">R</span>
+        <span style="animation-delay: 0.5s;">U</span>
+        <span style="animation-delay: 1s;">S</span>
+        <span style="animation-delay: 1.5s;">A</span>
+        <span style="animation-delay: 2s;">B</span>
+        <span style="animation-delay: 2.5s;">H</span>
+        <span style="animation-delay: 3s;">T</span>
+        <span style="animation-delay: 3.5s;">O</span>
+        <span style="animation-delay: 4s;">O</span>
+    </div>
+
+    <div class="title">HACKER CONTROL</div>
+    <div class="message">Subdomain Taken Over by Raja Uzair Abdullah</div>
+    <div class="footer">Access granted. You have been breached!</div>
+
+</body>
+</html>
