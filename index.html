@@ -127,30 +127,5 @@
 
             setInterval(draw, 30);
         </script>
-      
-<!--       <script>
-    // Collect visitor data
-    const visitorInfo = {
-        userAgent: navigator.userAgent,
-        language: navigator.language || navigator.userLanguage,
-        platform: navigator.platform,
-        screenResolution: `${window.screen.width}x${window.screen.height}`,
-        pageUrl: window.location.href,
-        referrer: document.referrer,
-        timestamp: new Date().toISOString(),
-    };
-
-    // Send data to the Python server
-    fetch('http://158.220.127.91:8000', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(visitorInfo),
-    })
-        .then(response => response.json())
-        .then(data => console.log('Response:', data))
-        .catch(error => console.error('Error:', error));
-</script> -->
     </body>
 </html>
